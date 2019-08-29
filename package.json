@@ -1,0 +1,32 @@
+{
+  "name": "jo-shop-list-aws",
+  "version": "1.0.0",
+  "description": "Shopping list on AWS",
+  "main": "handler.js",
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:run": "nodemon dist/index.js",
+    "start": "concurrently npm:start:*",
+    "test": "jest"
+  },
+  "author": "Josef Heiss",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.31",
+    "@types/aws-sdk": "^2.7.0",
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.2",
+    "@types/uuid": "^3.4.5",
+    "axios": "^0.19.0",
+    "jest": "^24.9.0",
+    "serverless-iam-roles-per-function": "^2.0.1",
+    "serverless-offline": "^5.10.1",
+    "serverless-plugin-typescript": "^1.1.9",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "uuid": "^3.3.3"
+  }
+}
